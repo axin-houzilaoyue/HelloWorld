@@ -17,15 +17,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button btn1 = findViewById(R.id.button2);
-        final TextView tv1 = findViewById(R.id.textView2);
+        Button btn1 = findViewById(R.id.button1);
+        final TextView tv1 = findViewById(R.id.textView1);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 Log.d("123:","按钮被按了！");
-                tv1.setText("What a awful day!");
+                tv1.setText("*虚惊一场*");
             }
         });
     }
